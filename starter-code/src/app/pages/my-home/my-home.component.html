@@ -1,7 +1,8 @@
 <ul>
   <li *ngFor = "let movie of movies"> 
     <h3>room {{movie.room}}</h3>
-    <img [src]="movie.poster">
+    <a [routerLink]="['/movie', movie.id]">
+      <img [src]="movie.poster"></a>
     <h6>{{movie.title}}</h6>
   </li>
 </ul>

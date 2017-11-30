@@ -116,8 +116,16 @@ export class MoviesServiceService {
   getMovies () {
     return this.movies;
   };
-  getMovie (id) {
-    return this.movies[this.movies.length].id;
+  getMovieById (id) {
+    const movie = this.movies.filter((elem) => {
+      if (elem.id + '' === id) {
+        return elem;
+      }
+    });
+    return movie[0];
   };
 
 }
+
+
+

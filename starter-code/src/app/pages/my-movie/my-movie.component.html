@@ -1,3 +1,12 @@
-<p>
-  my-movie works!
-</p>
+<p>ROOM {{movie.room}}</p>
+<img [src]= "movie.poster">
+<p>{{movie.title}}</p>
+<p>Genres {{movie.genres}}</p>
+<p>Year {{movie.year}}</p>
+<p>Director: {{movie.director}}</p>
+<p>Actors: {{movie.actors}}</p>
+<p>Schedules: {{movie.hours}}</p>
+<p>Synopsis: {{movie.synopsis}}</p>
+
+<a  [routerLink]="['/home']">GO HOME YOU'RE DRUNK</a>
+
